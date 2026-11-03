@@ -1,5 +1,5 @@
-<img width="1215" height="850" alt="Screenshot 2026-11-03 131222" src="https://github.com/user-attachments/assets/df0d5230-f968-427c-93b3-3df3a0feb986" /># Ex02 Commercial Website
-## Date:
+# Ex02 Commercial Website
+## Date: 2/11/26
 
 ## AIM
 To create a commercial website using CSS Flexbox.
