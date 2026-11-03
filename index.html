@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial smartphone store featuring flagship phones, technical specifications, certified trade-in services, and direct support.">
+  <title>Apex Mobile | Smartphones &amp; Connected Devices</title>
+
+  <!-- Typography: Inter for clean, legible, high-contrast readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for clean, functional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- STEP 3 & STEP 7: Navigation Bar (Flexbox layout) -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand" id="brand-link">
+        <span class="brand-mark"><i class="fa-solid fa-mobile-screen"></i></span>
+        <span class="brand-title">Apex Mobile</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-item active">Home</a></li>
+          <li><a href="#products" class="nav-item">Phones</a></li>
+          <li><a href="#services" class="nav-item">Services</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+          <li><a href="#account" class="nav-item">Account</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-utilities">
+        <button class="nav-icon-button" id="cart-button" aria-label="Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cart-counter">1</span>
+        </button>
+        <a href="#account" class="button button-secondary button-compact" id="nav-login-link">Sign In</a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- STEP 4: Section 1 - Homepage / Hero -->
+    <section class="section hero-section" id="home">
+      <div class="site-wrapper">
+        <div class="hero-grid">
+          <div class="hero-text-block">
+            <h1 class="hero-heading">Apex 9 Pro</h1>
+            <p class="hero-subheading">
+              6.7-inch Super Actua LTPO display, Tensor G4 processor, 50 MP triple camera system, and all-day battery life. Available in 128 GB, 256 GB, and 512 GB configurations.
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="button button-primary">Buy from $999</a>
+              <a href="#services" class="button button-secondary">Trade In Your Current Phone</a>
+            </div>
+            <div class="spec-strip">
+              <div class="spec-unit">
+                <span class="spec-value">6.7"</span>
+                <span class="spec-label">120 Hz OLED</span>
+              </div>
+              <div class="spec-unit">
+                <span class="spec-value">50 MP</span>
+                <span class="spec-label">Main + 5x Telephoto</span>
+              </div>
+              <div class="spec-unit">
+                <span class="spec-value">5,060 mAh</span>
+                <span class="spec-label">30W Fast Charging</span>
+              </div>
+              <div class="spec-unit">
+                <span class="spec-value">IP68</span>
+                <span class="spec-label">Water &amp; Dust Proof</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-block">
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=80" 
+                 alt="Apex 9 Pro flagship smartphone hardware display" 
+                 class="hero-photo"
+                 loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Section 2 - Products Section -->
+    <section class="section products-section" id="products">
+      <div class="site-wrapper">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Smartphones and Hardware</h2>
+          <p class="section-lead">Choose the model that fits your workflow and budget.</p>
+        </div>
+
+        <div class="filter-controls" id="product-filter-bar">
+          <button class="filter-btn active" data-category="all">All Models</button>
+          <button class="filter-btn" data-category="pro">Pro Series</button>
+          <button class="filter-btn" data-category="standard">Standard</button>
+          <button class="filter-btn" data-category="fold">Foldable</button>
+        </div>
+
+        <div class="card-grid" id="product-container">
+          <!-- Card 1 -->
+          <article class="product-item" data-category="pro">
+            <div class="product-visual">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" 
+                   alt="Apex 9 Pro Smartphone" 
+                   class="product-image"
+                   loading="lazy">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <h3 class="product-title">Apex 9 Pro</h3>
+                <span class="product-price">$999</span>
+              </div>
+              <p class="product-summary">Professional-grade triple camera with 5x optical zoom, titanium frame, and 120 Hz display.</p>
+              <ul class="product-features-list">
+                <li><i class="fa-solid fa-check"></i> 6.7-inch OLED 120 Hz display</li>
+                <li><i class="fa-solid fa-check"></i> 50 MP wide + 48 MP telephoto</li>
+                <li><i class="fa-solid fa-check"></i> 12 GB RAM, up to 512 GB storage</li>
+              </ul>
+              <div class="product-action-row">
+                <button class="button button-primary button-full purchase-btn" data-title="Apex 9 Pro" data-cost="999">Add to Bag</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-item" data-category="standard">
+            <div class="product-visual">
+              <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=800&q=80" 
+                   alt="Apex 9 Smartphone" 
+                   class="product-image"
+                   loading="lazy">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <h3 class="product-title">Apex 9</h3>
+                <span class="product-price">$699</span>
+              </div>
+              <p class="product-summary">Compact 6.3-inch form factor with flagship performance and dual camera system.</p>
+              <ul class="product-features-list">
+                <li><i class="fa-solid fa-check"></i> 6.3-inch OLED 60 Hz to 120 Hz</li>
+                <li><i class="fa-solid fa-check"></i> 50 MP wide + 12 MP ultrawide</li>
+                <li><i class="fa-solid fa-check"></i> 8 GB RAM, 128 GB or 256 GB</li>
+              </ul>
+              <div class="product-action-row">
+                <button class="button button-primary button-full purchase-btn" data-title="Apex 9" data-cost="699">Add to Bag</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-item" data-category="fold">
+            <div class="product-visual">
+              <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80" 
+                   alt="Apex Fold Smartphone" 
+                   class="product-image"
+                   loading="lazy">
+            </div>
+            <div class="product-details">
+              <div class="product-header">
+                <h3 class="product-title">Apex Fold</h3>
+                <span class="product-price">$1,799</span>
+              </div>
+              <p class="product-summary">Book-style foldable device opening to an 8.0-inch tablet-class internal workspace.</p>
+              <ul class="product-features-list">
+                <li><i class="fa-solid fa-check"></i> 8.0-inch inner display + 6.3-inch cover</li>
+                <li><i class="fa-solid fa-check"></i> Precision gear zero-gap hinge</li>
+                <li><i class="fa-solid fa-check"></i> 16 GB RAM, 512 GB storage</li>
+              </ul>
+              <div class="product-action-row">
+                <button class="button button-primary button-full purchase-btn" data-title="Apex Fold" data-cost="1799">Add to Bag</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Section 3 - Services Section -->
+    <section class="section services-section" id="services">
+      <div class="site-wrapper">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Services &amp; Ownership Support</h2>
+          <p class="section-lead">Warranty protection, hardware repair, and cellular connectivity setup.</p>
+        </div>
+
+        <div class="card-grid">
+          <div class="service-panel">
+            <div class="service-top">
+              <span class="service-glyph"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+              <h3 class="service-name">Direct Trade-In Credit</h3>
+            </div>
+            <p class="service-description">
+              Receive up to $700 towards your new phone when you send in an eligible device. Prepaid shipping box included.
+            </p>
+            <a href="#contact" class="link-action">Calculate Device Value &rarr;</a>
+          </div>
+
+          <div class="service-panel">
+            <div class="service-top">
+              <span class="service-glyph"><i class="fa-solid fa-shield"></i></span>
+              <h3 class="service-name">Apex Care Coverage</h3>
+            </div>
+            <p class="service-description">
+              Two years of hardware coverage including accidental damage protection and 24-hour battery replacements.
+            </p>
+            <a href="#contact" class="link-action">Read Warranty Terms &rarr;</a>
+          </div>
+
+          <div class="service-panel">
+            <div class="service-top">
+              <span class="service-glyph"><i class="fa-solid fa-sim-card"></i></span>
+              <h3 class="service-name">Carrier &amp; eSIM Setup</h3>
+            </div>
+            <p class="service-description">
+              Direct digital eSIM activation across major 5G networks with no activation fee or physical store visit needed.
+            </p>
+            <a href="#contact" class="link-action">Check Compatibility &rarr;</a>
+          </div>
+
+          <div class="service-panel">
+            <div class="service-top">
+              <span class="service-glyph"><i class="fa-solid fa-wrench"></i></span>
+              <h3 class="service-name">Authorized Repair Centers</h3>
+            </div>
+            <p class="service-description">
+              Certified repairs using original equipment manufacturer parts with same-day appointments in 42 major cities.
+            </p>
+            <a href="#contact" class="link-action">Find a Location &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Section 4 - About Us Section -->
+    <section class="section about-section" id="about">
+      <div class="site-wrapper">
+        <div class="split-layout">
+          <div class="split-media">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" 
+                 alt="Apex engineering and test facility" 
+                 class="about-photo"
+                 loading="lazy">
+          </div>
+          <div class="split-content">
+            <h2 class="section-heading">Built with Focus and Transparency</h2>
+            <p class="text-paragraph">
+              Apex Mobile manufactures smartphones for customers who value dependable hardware, clean software without pre-installed bloatware, and direct technical service.
+            </p>
+            <p class="text-paragraph">
+              All devices receive guaranteed operating system and security updates for seven years from initial release. We publish repair manuals and provide modular replacement parts directly to consumers and independent repair technicians.
+            </p>
+            <div class="stats-table">
+              <div class="stat-entry">
+                <span class="stat-big">7 Years</span>
+                <span class="stat-sub">Guaranteed OS &amp; Security Updates</span>
+              </div>
+              <div class="stat-entry">
+                <span class="stat-big">100%</span>
+                <span class="stat-sub">Recycled Aluminum Enclosures</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Section 5 - User Account Section -->
+    <section class="section account-section" id="account">
+      <div class="site-wrapper">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Customer Account</h2>
+          <p class="section-lead">Manage your orders, device registrations, and service requests.</p>
+        </div>
+
+        <div class="account-card">
+          <div class="account-segmented-control">
+            <button class="account-segment-btn active" id="btn-tab-signin">Sign In</button>
+            <button class="account-segment-btn" id="btn-tab-register">Register Device</button>
+          </div>
+
+          <!-- Sign In Form -->
+          <div class="account-form-panel" id="panel-signin">
+            <form id="signin-form" onsubmit="return false;">
+              <div class="input-field">
+                <label for="signin-email">Email Address</label>
+                <input type="email" id="signin-email" name="email" autocomplete="email" placeholder="name@domain.com" required>
+              </div>
+              <div class="input-field">
+                <div class="field-label-split">
+                  <label for="signin-password">Password</label>
+                  <a href="#" class="inline-help">Reset password</a>
+                </div>
+                <input type="password" id="signin-password" name="password" autocomplete="current-password" placeholder="Password" required>
+              </div>
+              <button type="submit" class="button button-primary button-full" id="signin-submit">Sign In</button>
+            </form>
+          </div>
+
+          <!-- Register Device Form -->
+          <div class="account-form-panel" id="panel-register" style="display: none;">
+            <form id="register-form" onsubmit="return false;">
+              <div class="input-field">
+                <label for="reg-imei">Device IMEI or Serial Number</label>
+                <input type="text" id="reg-imei" name="imei" placeholder="15-digit number from device box or settings" required>
+              </div>
+              <div class="input-field">
+                <label for="reg-purchase-date">Purchase Date</label>
+                <input type="date" id="reg-purchase-date" name="purchase_date" required>
+              </div>
+              <div class="input-field">
+                <label for="reg-owner-email">Owner Email</label>
+                <input type="email" id="reg-owner-email" name="owner_email" placeholder="name@domain.com" required>
+              </div>
+              <button type="submit" class="button button-primary button-full" id="register-submit">Verify Warranty</button>
+            </form>
+          </div>
+
+          <div class="account-status-message" id="account-status" style="display: none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Section 6 - Contact Details Section -->
+    <section class="section contact-section" id="contact">
+      <div class="site-wrapper">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Contact and Support</h2>
+          <p class="section-lead">Direct lines to sales assistance and certified hardware specialists.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-details-box">
+            <div class="contact-row">
+              <span class="contact-label">Customer Support</span>
+              <span class="contact-value"><a href="tel:18005550199">+1 (800) 555-0199</a></span>
+              <span class="contact-note">Monday to Friday: 8:00 AM to 8:00 PM EST</span>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-label">Direct Email</span>
+              <span class="contact-value"><a href="mailto:support@apexmobile.com">support@apexmobile.com</a></span>
+              <span class="contact-note">Average response time: 4 business hours</span>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-label">Corporate Office</span>
+              <span class="contact-value">Apex Mobile Inc.<br>450 Howard Street, Suite 400<br>San Francisco, CA 94105</span>
+            </div>
+          </div>
+
+          <div class="contact-form-box">
+            <form id="support-inquiry-form" onsubmit="return false;">
+              <div class="form-double-row">
+                <div class="input-field">
+                  <label for="inquiry-name">Full Name</label>
+                  <input type="text" id="inquiry-name" name="name" required placeholder="Alex Morgan">
+                </div>
+                <div class="input-field">
+                  <label for="inquiry-email">Email Address</label>
+                  <input type="email" id="inquiry-email" name="email" required placeholder="alex@domain.com">
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="inquiry-topic">Topic</label>
+                <select id="inquiry-topic" name="topic" required>
+                  <option value="" disabled selected>Select a department</option>
+                  <option value="orders">Orders &amp; Delivery</option>
+                  <option value="tradein">Device Trade-In</option>
+                  <option value="technical">Technical Support</option>
+                  <option value="enterprise">Corporate Procurement</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="inquiry-message">Inquiry Details</label>
+                <textarea id="inquiry-message" name="message" rows="4" required placeholder="Describe your question or order number"></textarea>
+              </div>
+
+              <button type="submit" class="button button-primary button-full" id="inquiry-submit">Submit Inquiry</button>
+              <div class="inquiry-feedback" id="inquiry-feedback" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STEP 5: Footer with Social Media Links & Copyright Information -->
+  <footer class="site-footer">
+    <div class="site-wrapper">
+      <div class="footer-primary-row">
+        <div class="footer-company-info">
+          <span class="footer-brand-title">Apex Mobile</span>
+          <p class="footer-desc">Commercial mobile hardware, certified service centers, and direct consumer support.</p>
+        </div>
+
+        <div class="footer-navigation-columns">
+          <div class="footer-col">
+            <span class="footer-heading">Products</span>
+            <ul class="footer-links">
+              <li><a href="#products">Apex 9 Pro</a></li>
+              <li><a href="#products">Apex 9</a></li>
+              <li><a href="#products">Apex Fold</a></li>
+              <li><a href="#services">Trade-In</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-heading">Support</span>
+            <ul class="footer-links">
+              <li><a href="#services">Care Coverage</a></li>
+              <li><a href="#services">Repair Status</a></li>
+              <li><a href="#account">Device Registration</a></li>
+              <li><a href="#contact">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-heading">Social</span>
+            <!-- STEP 5: Social Media Links -->
+            <ul class="footer-links">
+              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a></li>
+              <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5: Copyright Information -->
+      <div class="footer-bottom-row">
+        <span class="footer-copyright">&copy; 2026 Apex Mobile Inc. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Warranty Guidelines</a>
+          <a href="#">Recycling Program</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Bar for Bag updates -->
+  <div class="notification-bar" id="notification-bar" aria-live="polite"></div>
+
+  <!-- Client Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
