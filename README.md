@@ -1,4 +1,4 @@
-# Ex02 Commercial Website
+<img width="1215" height="850" alt="Screenshot 2026-11-03 131222" src="https://github.com/user-attachments/assets/df0d5230-f968-427c-93b3-3df3a0feb986" /># Ex02 Commercial Website
 ## Date:
 
 ## AIM
@@ -1629,9 +1629,12 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 
 ## OUTPUT
-![alt text](<../Screenshot 2026-11-03 131222.png>)
-![alt text](<../Screenshot 2026-11-03 131247.png>)
-![alt text](<../Screenshot 2026-11-03 131302.png>)
+<img width="1215" height="850" alt="Screenshot 2026-11-03 131222" src="https://github.com/user-attachments/assets/763e117b-ff18-431f-aa05-039290e91547" />
+<img width="1187" height="865" alt="Screenshot 2026-11-03 131247" src="https://github.com/user-attachments/assets/9e482392-a768-43b3-a95a-48dfc197910f" />
+<img width="1223" height="820" alt="Screenshot 2026-11-03 131302" src="https://github.com/user-attachments/assets/7de17cd5-3c2c-483b-9455-bbc27ff6cc21" />
+
+
+
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
